@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bingöl Çobanları – Edebiyat Gazetesi</title>
+<style>
+:root{--bg:#cfcfcb;--paper:#e4e3de;--ink:#1f1f1d;--mut:#55554f;--line:#7a7a74;--soft:#d3d2cc;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#2a2a28;--paper:#3a3a37;--ink:#e8e7e1;--mut:#b0afa6;--line:#8a8a82;--soft:#454541;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#2a2a28;--paper:#3a3a37;--ink:#e8e7e1;--mut:#b0afa6;--line:#8a8a82;--soft:#454541;color-scheme:dark}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font-family:Georgia,"Times New Roman",Times,serif;line-height:1.65}
+.sheet{max-width:960px;margin:0 auto;background:var(--paper);min-height:100vh;padding:18px 22px 40px;box-shadow:0 0 0 1px var(--line)}
+.top{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--mut);border-bottom:1px solid var(--line);padding-bottom:6px}
+.mast{text-align:center;border-bottom:4px double var(--ink);padding:14px 0 10px}
+.mast h1{margin:0;font-family:"Times New Roman",Times,serif;font-size:clamp(2.2rem,8vw,4.4rem);font-weight:900;letter-spacing:.02em;line-height:1.05}
+.mast p{margin:4px 0 0;font-style:italic;color:var(--mut)}
+nav{display:flex;flex-wrap:wrap;justify-content:center;border-bottom:1px solid var(--ink);margin-bottom:22px}
+nav button{background:none;border:0;border-right:1px solid var(--line);color:var(--ink);font:700 13px Georgia,serif;letter-spacing:.06em;text-transform:uppercase;padding:10px 14px;cursor:pointer}
+nav button:last-child{border-right:0}
+nav button:hover{background:var(--soft)}
+nav button[aria-current="true"]{background:var(--ink);color:var(--paper)}
+.page{display:none}
+.page.on{display:block}
+.kicker{font:700 12px Georgia,serif;letter-spacing:.14em;text-transform:uppercase;color:var(--mut)}
+h2{font-size:clamp(1.7rem,5vw,2.6rem);line-height:1.15;margin:4px 0 6px;font-weight:900}
+.deck{font-style:italic;color:var(--mut);border-bottom:1px solid var(--line);padding-bottom:10px;margin:0 0 16px}
+h3{margin:18px 0 4px;font-size:1.1rem;border-top:2px solid var(--ink);padding-top:6px}
+.cols{column-count:2;column-gap:28px;column-rule:1px solid var(--line);text-align:justify;hyphens:auto}
+.cols p{margin:0 0 12px}
+.cols h3{break-after:avoid}
+.box{border:1px solid var(--ink);padding:12px 16px;margin:16px 0;background:var(--soft)}
+.box.dash{border-style:dashed}
+.poem{max-width:560px;margin:0 auto;font-style:italic;font-size:1.05rem;border-left:3px solid var(--ink);padding-left:18px}.poem p{margin:0 0 16px}.poem h4{font-style:normal;margin:0 0 12px;font-size:1.2rem;letter-spacing:.04em}
+.pull{font-size:1.4rem;font-style:italic;border-top:3px solid var(--ink);border-bottom:1px solid var(--ink);padding:10px 0;margin:18px 0;text-align:center}
+.tag{display:inline-block;border:1px solid var(--ink);padding:1px 10px;margin:3px 4px 3px 0;font-size:.9rem}
+.scroll{overflow-x:auto}
+figure.sair{margin:18px auto;max-width:240px;text-align:center}figure.sair img{display:block;width:100%;height:auto;filter:grayscale(1) contrast(1.05);border:1px solid var(--ink);padding:5px;background:var(--soft)}figure.sair figcaption{font-size:.85rem;font-style:italic;color:var(--mut);margin-top:6px}
+table{width:100%;border-collapse:collapse}
+th,td{text-align:left;padding:8px 10px;border:1px solid var(--line);font-size:.95rem}
+th{background:var(--ink);color:var(--paper)}
+.row th{width:30%}
+.credits{text-align:center;padding:40px 0 30px}.credits h2{margin:8px 0 14px}.credits .rule{width:90px;height:4px;background:var(--ink);margin:0 auto 26px}.credits .name{font-size:clamp(1.3rem,4vw,1.9rem);font-weight:700;margin:10px 0}.credits .by{margin-top:30px;color:var(--mut);font-size:.95rem;font-style:italic}
+footer{margin-top:30px;border-top:4px double var(--ink);padding-top:8px;text-align:center;font-size:12px;letter-spacing:.06em;color:var(--mut);text-transform:uppercase}
+@media(max-width:640px){.cols{column-count:1}.sheet{padding:14px}}
+</style>
+</head>
+<body>
+<div class="sheet">
+<div class="top"><span>Türk Dili ve Edebiyatı</span></div>
+<div class="mast"><h1>EDEBİYAT GAZETESİ</h1><p>“Bingöl Çobanları” Sunumu · Kemalettin Kamu</p></div>
+<nav id="nav">
+<button data-p="ana" aria-current="true">Ana Sayfa</button>
+<button data-p="g1">1. Grup</button>
+<button data-p="g2">2. Grup</button>
+<button data-p="g3">3. Grup</button>
+<button data-p="g4">4. Grup</button>
+<button data-p="harita">Şiir Haritası</button>
+<button data-p="son">Emeği Geçenler</button>
+</nav>
+
+<div class="page on" id="ana">
+<span class="kicker">Manşet</span>
+<h2>Bingöl’in Dağlarında Bir Çoban Sesi</h2>
+<p class="deck">Dört grup, tek şiir: Kemalettin Kamu’nun <i>Bingöl Çobanları</i> dört ayrı sayfada inceleniyor.</p>
+<div class="cols">
+<p>Bu gazete, 9. sınıf Türk Dili ve Edebiyatı dersinde işlenen <b>Bingöl Çobanları</b> şiirinin grup çalışmasını sunar. Her grup şiirin farklı bir yönünü incelemiş, sonuçlarını kendi sayfasında toplamıştır.</p>
+<h3>Şair: Kemalettin Kamu</h3>
+<p>Kemalettin Kamu (1901–1948), hece şiirinin <b>Beş Hececiler</b> topluluğundandır. İlk şiirleri 1919’da Büyük Mecmua’da çıkmış, Milli Mücadele yıllarında vatan sevgisini işleyen şiirleriyle dikkat çekmiştir. Sonraki şiirlerinde aşk, gurbet ve yalnızlık öne çıkar. En çok tanınan şiiri Bingöl Çobanları’dır.</p>
+</div>
+<div class="box"><span class="tag">Tür: Lirik</span><span class="tag">Ölçü: Hece</span><span class="tag">Tema: Çobanların yaşamı</span><span class="tag">Mekân: Bingöl yaylaları</span></div>
+<h3>Şiirin Metni</h3>
+<div class="box poem"><h4>Bingöl Çobanları</h4>
+<p>Daha deniz görmemiş bir çoban çocuğuyum<br>Bu dağların eskiden aşinasıdır soyum<br>Bekçileri gibiyiz ebenced buraların<br>Bu tenha derelerin, bu vahşi kayaların<br>Görmediği gün yoktur sürü peşinde bizi<br>Her gün aynı pınardan doldurur destimizi<br>Kırlara açılırız çıngıraklarımızla.</p>
+<p>Okuma yok, yazma yok, bilmeyiz eski yeni<br>Kuzular bize söyler yılların geçtiğini<br>Arzu, başlarımızdan yıldızlar gibi yüksek<br>Önümüzde bir sürü, yanımızda bir köpek<br>Dolaştırıp dururuz aynı daüssılayı<br>Her adım uyandırır acı bir hatırayı!<br>Anam bir yaz gecesi doğurmuş beni burda<br>Bu çamlıkta söylemiş son sözlerini babam<br>Şu karşıki bayırda verdim kuzuyu kurda<br>“Suna”mın başka köye gelin gittiği akşam.</p>
+<p>Gün biter, sürü yatar ve sararsan bir ayla<br>Çoban hicranlarını basar bağrına yayla<br>Kuru bir yaprak gibi kalbini eline al<br>Diye hıçkırır kaval.</p>
+<p>Bir çoban parçasısın, olmasan bile koyun<br>Daima eğeceksin başkalarına boyun<br>Hülyana karışmasın ne şehir, ne de çarşı<br>Yamaçlarda her aksam batan güneşe karşı<br>Uçan kuşları düşün, geçen kervanları an<br>Madem ki kara bahtın adını koydu çoban!</p>
+<p>Nasıl yaşadığından, ne içip yediğinden<br>Çıngırak seslerinin dağlara dediğinden<br>Anlattı uzun uzun.</p>
+<p>Şehrin uğultusundan usanmış ruhumuzun<br>Nadir duyabildiği taze bir heyecanla<br>Karıştım o gün bugün bu zavallı çobanla<br>Bingöl yaylalarının mavi dumanlarına<br>Gönlümü yayla yaptım Bingöl çobanlarına.</p>
+<p style="font-style:normal;font-size:.9rem;margin:0">— Kemalettin Kamu</p></div>
+</div>
+
+<div class="page" id="g1">
+<span class="kicker">1. Grup · İmge Sayfası</span>
+<h2>Dağ, Kaval, Yıldız: Şiirin Görüntüleri</h2>
+<p class="deck">İmgeler, çağrışımlar ve söz sanatları incelendi.</p>
+<div class="pull">Dağ, yayla, sürü, kaval, yıldız</div>
+<div class="cols">
+<h3>İmgeler</h3>
+<p>Şiirin imgeleri doğadan ve çobanlıktan gelir: dağ, yayla, sürü, kaval ve yıldız. Bunlara pınar, dest (su kabı), çıngırak, köpek, çamlık ve “mavi dumanlar” eklenir. Okuyucu bu görüntülerle çobanın dünyasını gözünde canlandırır.</p>
+<h3>Çağrışımlar</h3>
+<p>Yayla ve dağ, yalnızlığı ve doğayı; kaval, hüznü ve özlemi; sürü ise çobanın sorumluluğunu ve emeğini çağrıştırır.</p>
+<h3>Söz Sanatları</h3>
+<p><span class="tag">Teşbih</span> “Arzu, başlarımızdan yıldızlar gibi yüksek” dizesinde arzu yıldıza benzetilir. “Kuru bir yaprak gibi kalbini eline al” dizesinde de kalp kuru yaprağa benzetilir.</p>
+<p><span class="tag">Teşhis ve İntak</span> Kuzular konuşur (“Kuzular bize söyler”), kaval hıçkırır, çıngıraklar dağlara bir şey söyler, yayla çobanı bağrına basar.</p>
+<p><span class="tag">Seslenme</span> “Bir çoban parçasısın” bölümünde şair okuyucuya ya da çobana doğrudan seslenir.</p>
+</div>
+</div>
+
+<div class="page" id="g2">
+<span class="kicker">2. Grup · Ahenk Sayfası</span>
+<h2>Hüznün Ritmi: Duygu, Ses ve Vurgu</h2>
+<p class="deck">Şiirin oluşturduğu duygular, ses, ritim ve vurgu ilişkileri çözümlendi.</p>
+<div class="cols">
+<h3>Duygular</h3>
+<p><span class="tag">hüzün</span><span class="tag">özlem</span><span class="tag">yalnızlık</span><span class="tag">tabiat sevgisi</span></p>
+<h3>Ses ve Ritim</h3>
+<p>Şiir ağırlıklı olarak 14’lü (7+7) hece ölçüsüyle yazılmıştır. “Diye hıçkırır kaval” gibi kısa dizeler (7’li) ritmi değiştirerek duraklama ve vurgu yaratır. Dizeler ikişer ikişer uyaklıdır (soyum/çocuğuyum, buraların/kayaların, yüksek/köpek). Bu uyaklar şiire ezgi gibi bir akış verir.</p>
+<p>“Her adım uyandırır acı bir hatırayı!” dizesindeki ünlem acı duygusunu vurgular. “Daüssıla” (yurt özlemi) sözcüğü şiirin ana duygusunu verir. Sonda şairin heyecanı “taze bir heyecan” olarak öne çıkar.</p>
+</div>
+<h3>Şiirdeki Ses Olayları</h3>
+<div class="scroll"><table>
+<tr><th>Ses olayı</th><th>Örnek</th></tr>
+<tr><td>Ünsüz benzeşmesi</td><td>geç-diğini → geçtiğini</td></tr>
+<tr><td>Ünsüz yumuşaması</td><td>çocuk → çocuğuyum, kalp → kalbini</td></tr>
+<tr><td>Ünlü daralması</td><td>de-ye → diye</td></tr>
+<tr><td>Ünlü düşmesi</td><td>bağır → bağrına</td></tr>
+<tr><td>Ulama</td><td>her adım, bir ayla</td></tr>
+</table></div>
+</div>
+
+<div class="page" id="g3">
+<span class="kicker">3. Grup · Satır Arası Sayfası</span>
+<h2>Satırların Ardındaki Anlam</h2>
+<p class="deck">Şiirin içeriğinde yer alan örtük anlamlar ve iletiler tespit edildi.</p>
+<div class="cols">
+<h3>Açık Anlam</h3>
+<p>Çoban, dağlarda doğup büyüyen, okuma yazması olmayan, zamanı kuzulardan öğrenen biridir. Son bölümde ise şehirli şair bu çobanla karşılaşır, onun anlattıklarını dinler.</p>
+<h3>Örtük Anlam</h3>
+<p>Gurbet, kader ve yalnızlık doğrudan söylenmez, sezdirilir. “Daha deniz görmemiş” dizesi çobanın dar bir dünyada yaşadığını, “kara bahtın adını koydu çoban” dizesi ise yazgısına boyun eğdiğini düşündürür. “Eğeceksin başkalarına boyun” dizesi bağımlılığa ve yoksulluğa işaret eder.</p>
+<p>Son bölümde “şehrin uğultusundan usanmış” şair, sade ve doğal hayata yönelir. Bu, şehir yaşamının yorgunluğuna karşı doğanın ve Anadolu insanının sadeliğine duyulan özlemi sezdirir. “Gönlümü yayla yaptım” dizesi şairin çobana ve onun yaşamına bağlanmasını anlatır.</p>
+</div>
+<div class="pull">Çoban yaşamı açık, gurbet ve kader örtük</div>
+</div>
+
+<div class="page" id="g4">
+<span class="kicker">4. Grup · Bilim Sayfası</span>
+<h2>Şiir Başka Disiplinlerle Buluşuyor</h2>
+<p class="deck">Şiirin psikoloji, tarih, sosyoloji gibi alanlarla ilişkisi değerlendirildi.</p>
+<div class="cols">
+<h3>Psikoloji</h3><p>Çobanın iç dünyası: yalnızlık, özlem, hicran ve kaderine boyun eğiş. “Daüssıla” ve “acı bir hatıra” ifadeleri duygusal yükü gösterir. Çobanın anne baba kaybı ve “Suna”ya duyduğu özlem de bu iç dünyanın parçasıdır.</p>
+<h3>Sosyoloji</h3><p>Kırsal yaşam biçimi: okuma yazma yok, şehirden ve çarşıdan uzak bir hayat var. Zaman kuzulardan öğrenilir. Çoban geçimini sürüyle sağlar ve yoksulluk içinde yaşar.</p>
+<h3>Tarih</h3><p>Çobanlık eski bir meslektir ve kuşaktan kuşağa geçer: “Bu dağların eskiden aşinasıdır soyum”. Şair Cumhuriyet’in ilk yıllarında Anadolu’ya ve halka yönelen memleket edebiyatı anlayışının bir temsilcisidir.</p>
+<h3>Coğrafya</h3><p>Bingöl yaylaları, tenha dereler, kayalar ve çamlıklar çobanın yaşam alanını oluşturur. Coğrafya insanın hayatını biçimlendirir: Çoban deniz görmemiştir ve yaşamı yayla ile pınar çevresinde geçer.</p>
+</div>
+</div>
+
+<div class="page" id="harita">
+<span class="kicker">Ek · Özet Sayfası</span>
+<h2>Şiir Haritası</h2>
+<p class="deck">Dört grubun bulgularının tek bakışta özeti.</p>
+<figure class="sair"><img src="kemalettin-kamu.jpg" alt="Kemalettin Kamu" onerror="this.closest('figure').style.display='none'"><figcaption>Kemalettin Kamu (1901–1948)</figcaption></figure>
+<div class="scroll"><table class="row">
+<tr><th>Şair</th><td>Kemalettin Kamu</td></tr>
+<tr><th>Şiir</th><td>Bingöl Çobanları</td></tr>
+<tr><th>Tema</th><td>Çobanların zorlu yaşamı</td></tr>
+<tr><th>Duygular</th><td>Özlem, yalnızlık, hüzün</td></tr>
+<tr><th>İmgeler</th><td>Yayla, kaval, sürü, yıldız</td></tr>
+<tr><th>Örtük anlam</th><td>Anadolu insanının güçlüklerine karşı duyarlılık</td></tr>
+</table></div>
+</div>
+
+<div class="page" id="son">
+<div class="credits">
+<span class="kicker">Araştırma</span>
+<h2>Araştırmaya Yardımcı Olanlar</h2>
+<div class="rule"></div>
+<div class="name">9/A Zeynep SINDIRGILI</div>
+<div class="name">9/A Oğuz Kuzey AYDIN</div>
+<div class="name">9/A Yiğit ERYILMAZ</div>
+<div class="name">9/A Yağız Burak KÖKTEPE</div>
+<div class="name">9/A Berat Efe BAYINDIR</div>
+<div class="by">Web Siteyi Hazırlayan: 9/A Efe KARABAKIROĞLU</div>
+</div>
+</div>
+
+<footer>Türk Dili ve Edebiyatı Projesi</footer>
+</div>
+<script>
+(function(){
+var btns=document.querySelectorAll('#nav button'),pages=document.querySelectorAll('.page');
+function show(id){
+  pages.forEach(function(p){p.classList.toggle('on',p.id===id)});
+  btns.forEach(function(b){b.setAttribute('aria-current',b.dataset.p===id?'true':'false')});
+  window.scrollTo(0,0);
+}
+btns.forEach(function(b){b.addEventListener('click',function(){show(b.dataset.p)})});
+})();
+</script>
+</body>
+</html>
